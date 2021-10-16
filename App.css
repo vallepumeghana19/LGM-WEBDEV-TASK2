@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color: white;
+}
+.nav-bar{
+  top:0;
+  cursor: pointer;
+  display: flex;
+  background-color: aqua;
+
+}
+.nav-list{
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+.nav-list li{
+  list-style: none;
+  padding: 20px 20px;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  border-radius: 60rem;
+  color: blue;
+  font-size: larger;
+  font-weight: 800;
+}
+
+.nav-list li a:hover{
+  color:rgb(12, 12, 163) ;
+}
+.btn{
+  position: absolute;
+  font-size: 20px;
+  right: 15%;
+  height: 10%;
+  width: 10%;
+  border-radius: 1px solid rgb(55, 4, 238);
+  border-radius:10% ;
+  background-color: rgb(90, 211, 233);
+}
+.btn:hover{
+  background-color: rgb(52, 204, 90);
+}
+h2{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.box{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 8rem;
+  padding: 5.5rem 6.5rem;
+  column-gap: 85px;
+  background: #aee2e0;
+  background-position: 100px;
+  padding-top: 100px;
+  
+}
+h1{
+  text-align: center;
+}
+.card{
+  width: 80%;
+  height: 330px;
+  border-radius:6px;
+  border-top-right-radius:50rem;
+  border-top-left-radius:50rem;
+  border-bottom-right-radius:5rem ;
+  border-bottom-left-radius: 5rem;
+
+  background-color: rgb(218, 114, 114);
+  border: 3px solid blue;
+  transition: 0.5s;
+  
+}
+.card:hover{
+  box-shadow: 1px 8px 8px rgb(240, 159, 53);
+  border: 5px solid red;
+}
+.avatar{
+  width:100%;
+  height: 15rem;
+  object-fit: cover;
+  border-top-right-radius:50rem;
+  border-top-left-radius:50rem;
+}
+.card-des{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-des h2{
+  position: relative;
+  font-weight: 600;
+  font-size: 14;
+  color: black;
+  margin: 2px 0 0 0;
+}
+.loader{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 0%;
+  border:5px solid  rgb(230, 12, 12);
+  animation: rotate 2s infinite linear ;
+  
+}
+@keyframes rotate{
+  0%{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+  }
+.base{
+  display: flex;
+  background-size: cover;
+  align-items: center;
+
+}
+
+.base .cot h3{
+  position: absolute;
+  padding-top: 90px;
+  font-size: 50px;
+  margin-left: 30%;
+  margin-right: 25%;
+  color: blue;
+  text-decoration: solid;
+  text-align: center;
+  animation: float 6s infinite linear;
+  
+}
+@keyframes float{
+  0%,100%{
+    transform: translate(-25rem);
+    color: rgb(248, 15, 229);
+
+  }
+  25%{
+    transform: translateY(20rem);
+    color: rgb(55, 194, 0);
+  }
+  50%{
+    transform: translate(25rem);
+    color: rgb(129, 72, 235);
+  }
+  75%{
+    transform: translateY(-9rem);
+    color: rgb(194, 55, 0);
+  }
+}
